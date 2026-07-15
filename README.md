@@ -25,6 +25,22 @@ Iron's Spells and FTB Teams each have their own transitive dependencies (`geckol
 
 Single toggle, `enableTeamSummonProtection` (default `true`). Disabling it fully reverts to vanilla Iron's Spells behavior, no need to uninstall the mod. Editable via the config file or in-game config screen.
 
+### Building
+
+1. Copy the two dependency jars from your Minecraft client's `mods/` folder into `libs/` (see [libs/README.md](libs/README.md)):
+   ```
+   libs/irons_spellbooks-1.21.1-3.16.2.jar
+   libs/ftb-teams-neoforge-2101.1.10.jar
+   ```
+2. Run the Gradle wrapper from the project root:
+   ```
+   ./gradlew build        # Linux/macOS
+   gradlew.bat build      # Windows
+   ```
+3. The built jar is output to `build/libs/ironsspellsnftbteams-<version>.jar`.
+
+There is no CI for this project — hosted CI can't legally fetch the two ARR-licensed dependency jars, so builds must be run locally.
+
 ### About this project
 
 This mod's code was generated and written by AI (Claude Code) under user direction.
@@ -55,6 +71,22 @@ Iron's Spells 与 FTB Teams 各自的间接依赖（`geckolib`、`curios`、`pla
 ### 配置
 
 唯一开关 `enableTeamSummonProtection`（默认 `true`），关闭后行为完全回退到原版 Iron's Spells 逻辑，可在配置文件或配置界面中修改，无需卸载模组。
+
+### 编译
+
+1. 把两个依赖 jar 从客户端 `mods/` 目录复制到 `libs/`（详见 [libs/README.md](libs/README.md)）：
+   ```
+   libs/irons_spellbooks-1.21.1-3.16.2.jar
+   libs/ftb-teams-neoforge-2101.1.10.jar
+   ```
+2. 在项目根目录运行 Gradle wrapper：
+   ```
+   ./gradlew build        # Linux/macOS
+   gradlew.bat build      # Windows
+   ```
+3. 编译产物在 `build/libs/ironsspellsnftbteams-<version>.jar`。
+
+本项目没有配置 CI——托管 CI 环境无法合法获取那两个 ARR 协议的依赖 jar，所以只能本地编译。
 
 ### 关于本项目
 
