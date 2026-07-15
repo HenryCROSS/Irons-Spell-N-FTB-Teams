@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "cross.ironsspellsnftbteams.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "IMagicSummonMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
